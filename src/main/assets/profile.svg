@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">A simple pixel-inspired placeholder portrait with the initials PJ.</desc>
+  <rect width="480" height="600" fill="#fbfaf6"/>
+  <path d="M0 0h480v600H0z" fill="#fbfaf6"/>
+  <path d="M32 32h416v536H32z" fill="#161616"/>
+  <path d="M48 48h384v504H48z" fill="#f3ead8"/>
+  <path d="M96 120h288v288H96z" fill="#d9d1c0"/>
+  <path d="M128 96h224v56H128z" fill="#161616"/>
+  <path d="M112 152h256v72H112z" fill="#161616"/>
+  <path d="M144 248h64v64h-64zM272 248h64v64h-64z" fill="#161616"/>
+  <path d="M208 336h64v32h-64z" fill="#b11226"/>
+  <path d="M96 424h288v80H96z" fill="#176b4d"/>
+  <text x="240" y="488" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="52" font-weight="700" fill="#fbfaf6">PJ</text>
+</svg>

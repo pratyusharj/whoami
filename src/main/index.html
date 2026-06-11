@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Personal website for Pratyusha: notes, projects, saved links, resume, and wedding website archive."
+    >
+    <title>pratyusha / whoami</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Home">
+          <span class="prompt">~/</span>whoami
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#home" data-route-link="home">home</a>
+          <a href="#about" data-route-link="about">about</a>
+          <a href="#projects" data-route-link="projects">projects</a>
+          <a href="#blog" data-route-link="blog">blog</a>
+          <a href="#wedding" data-route-link="wedding">wedding</a>
+        </nav>
+      </header>
+
+      <main id="app" tabindex="-1">
+        <noscript>
+          <section class="view">
+            <h1>Pratyusha</h1>
+            <p>This site needs JavaScript for the tabbed navigation.</p>
+          </section>
+        </noscript>
+      </main>
+    </div>
+
+    <template id="home-template">
+      <section class="view home-grid" aria-labelledby="home-title">
+        <div class="portrait-wrap">
+          <img src="assets/profile.svg" alt="Portrait placeholder for Pratyusha" class="portrait">
+        </div>
+        <div class="home-copy">
+          <p class="kicker">personal site / small internet home</p>
+          <h1 id="home-title"></h1>
+          <p class="lede"></p>
+          <ul class="contact-list" aria-label="Contact links"></ul>
+        </div>
+      </section>
+    </template>
+
+    <template id="about-template">
+      <section class="view stack" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="kicker">about</p>
+          <h1 id="about-title">a little longer than one line</h1>
+        </div>
+        <div class="copy-block" data-about-copy></div>
+        <section class="resume-section" aria-labelledby="resume-title">
+          <div class="resume-header">
+            <div>
+              <p class="kicker">resume</p>
+              <h2 id="resume-title">embedded pdf</h2>
+            </div>
+            <a class="text-link" href="assets/resume.pdf" download>download pdf</a>
+          </div>
+          <object
+            class="resume-frame"
+            data="assets/resume.pdf"
+            type="application/pdf"
+            aria-label="Embedded resume PDF"
+          >
+            <p>
+              Your browser cannot display the embedded PDF.
+              <a href="assets/resume.pdf" download>Download it instead.</a>
+            </p>
+          </object>
+        </section>
+      </section>
+    </template>
+
+    <template id="projects-template">
+      <section class="view stack" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="kicker">projects</p>
+          <h1 id="projects-title">small, useful things</h1>
+          <p class="section-intro">
+            A compact list for the things that are real enough to share, without pretending this needs to be a giant portfolio.
+          </p>
+        </div>
+        <div class="item-list" data-projects></div>
+      </section>
+    </template>
+
+    <template id="blog-template">
+      <section class="view stack" aria-labelledby="blog-title">
+        <div class="section-heading">
+          <p class="kicker">blog</p>
+          <h1 id="blog-title">posts and things worth revisiting</h1>
+          <p class="section-intro">
+            Original posts can live next to saved articles, talks, books, recipes, systems, or any other thing that keeps paying rent in your brain.
+          </p>
+        </div>
+        <div class="split-list">
+          <section aria-labelledby="posts-title">
+            <div class="list-header">
+              <h2 id="posts-title">posts</h2>
+              <span data-post-count></span>
+            </div>
+            <div class="item-list compact" data-posts></div>
+          </section>
+          <section aria-labelledby="links-title">
+            <div class="list-header">
+              <h2 id="links-title">saved links</h2>
+              <span data-link-count></span>
+            </div>
+            <div class="item-list compact" data-links></div>
+          </section>
+        </div>
+      </section>
+    </template>
+
+    <template id="wedding-template">
+      <section class="view stack" aria-labelledby="wedding-title">
+        <div class="section-heading">
+          <p class="kicker">archive</p>
+          <h1 id="wedding-title">wedding website</h1>
+          <p class="section-intro" data-wedding-intro></p>
+        </div>
+        <div class="archive-layout">
+          <section class="copy-block" aria-labelledby="archive-title">
+            <h2 id="archive-title">why archive it here</h2>
+            <p data-wedding-rationale></p>
+          </section>
+          <section aria-labelledby="archive-map-title">
+            <h2 id="archive-map-title">guest-first structure</h2>
+            <ol class="archive-map" data-wedding-map></ol>
+          </section>
+        </div>
+        <a class="text-link" href="#" data-wedding-link>open archive placeholder</a>
+      </section>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
