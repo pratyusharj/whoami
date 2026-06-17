@@ -1,23 +1,13 @@
 {
-  "dependencies": {
-    "firebase": "^10.11.1"
-  },
-  "name": "osculari",
+  "name": "whoami",
   "version": "1.0.0",
-  "description": "pratyusha + elijah's wedding website",
-  "main": "app.js",
-  "devDependencies": {},
+  "description": "personal website for pratyusha",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pratyusharj/osculari.git"
+    "dev": "node server.mjs",
+    "check": "node --check app.js && node --check server.mjs",
+    "test": "npm run check"
   },
   "author": "pratyusharj",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pratyusharj/osculari/issues"
-  },
-  "homepage": "https://github.com/pratyusharj/osculari#readme"
+  "license": "ISC"
 }
