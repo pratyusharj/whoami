@@ -1,1 +1,1 @@
-# osculari - a web app for pratyusha and elijah's wedding 
+# whoami - a very simple web app / static personal site for pratyusha javangula
