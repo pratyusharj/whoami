@@ -13,25 +13,29 @@ const experienceItems = [
   {
     company: "Adobe",
     title: "Senior Software Engineer",
-    description: "Query languages, transpilers, query engines for audience evaluation",
+    description:
+      "Query languages, transpilers, query engines for audience evaluation",
     years: "Dec 2025 - present",
   },
   {
     company: "Adobe",
     title: "Software Engineer",
-    description: "Entity resolution with Spark + Delta Lake, zero-downtime graph migration for FoundationDB storage platforms",
+    description:
+      "Entity resolution with Spark + Delta Lake, zero-downtime graph migration for FoundationDB storage platforms",
     years: "Nov 2022 - Nov 2025",
   },
   {
     company: "C3 AI",
     title: "Engineering Manager (FDE)",
-    description: "Led team of 6 FDEs working with Fortune 100 platform customers; delivered new Mfg Sustainability app on GCP; ML observability for C3 AI Reliability",
+    description:
+      "Led team of 6 FDEs working with Fortune 100 platform customers; delivered new Mfg Sustainability app on GCP; ML observability for C3 AI Reliability",
     years: "Apr 2022 - Sep 2022",
   },
   {
     company: "C3 AI",
     title: "Software Engineer (FDE)",
-    description: "AI-native smart lending, covenant breach early warning, anti money laundering, financial statement intelligence (OCR + analytics)",
+    description:
+      "AI-native smart lending, covenant breach early warning, anti money laundering, financial statement intelligence (OCR + analytics)",
     years: "Jul 2020 - Mar 2022",
   },
   {
@@ -44,56 +48,34 @@ const experienceItems = [
 
 const projects = [
   {
-    name: "SQL Translator",
+    name: "valenscrabbletine",
     tag: "Fun weekend project",
-    href: "https://github.com/whoiskatrin/sql-translator",
+    href: "https://github.com/pratyusharj/valenscrabbletine",
     fallbackStars: "4.3k ★",
   },
   {
-    name: "Cloudflare Agents",
-    tag: "Maintainer",
-    href: "https://github.com/cloudflare/agents",
+    name: "whoami",
+    tag: "Source code for this site",
+    href: "https://github.com/pratyusharj/whoami",
     fallbackStars: "2.9k ★",
-  },
-  {
-    name: "Cloudflare Sandbox SDK",
-    tag: "Maintainer",
-    href: "https://github.com/cloudflare/sandbox-sdk",
-    fallbackStars: "689 ★",
-  },
-  {
-    name: "NPM Copilot",
-    tag: "Fun weekend project",
-    href: "https://github.com/whoiskatrin/npm-copilot",
-    fallbackStars: "374 ★",
   },
 ];
 
-const mediaItems = [
+const potpourriItems = [
   {
-    title: "Agents Have Their Own Computers with Sandboxes GA",
-    source: "Cloudflare Blog",
-    href: "https://blog.cloudflare.com/sandbox-ga/",
+    title: "Parse, don't validate",
+    source: "Blog post",
+    href: "https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/",
   },
   {
-    title: "Skills for Organizations, Partners, the Ecosystem",
-    source: "Anthropic Blog",
-    href: "https://claude.com/blog/organization-skills-and-directory",
+    title: "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus (incl. me) 2023",
+    source: "YouTube",
+    href: "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus 2023",
   },
   {
-    title: "Building Agents with OpenAI",
-    source: "Cloudflare Blog",
-    href: "https://blog.cloudflare.com/building-agents-with-openai-and-cloudflares-agents-sdk/",
-  },
-  {
-    title: "Dry Run: You've Got Mail",
-    source: "Cloudflare TV",
-    href: "https://cloudflare.tv/event/dry-run-you-ve-got-mail/1Zr8G4vO",
-  },
-  {
-    title: "Strategies For Builders Becoming AI Founders",
-    source: "AI Unveiled Podcast",
-    href: "https://open.spotify.com/episode/0UdmG7CRxbUf5axciSmwhK",
+    title: "My favorite channel for Andhra cooking",
+    source: "YouTube",
+    href: "https://www.youtube.com/@AmmaChethiVanta",
   },
 ];
 
@@ -101,7 +83,7 @@ const footerLinks = [
   { label: "Email", href: "mailto:pjavangula@adobe.com" },
   { label: "GitHub", href: "https://github.com/pratyusharj" },
   { label: "Twitter", href: "https://x.com/pratyusharj" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/pratyushajavangula" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/pratyusharj" },
 ];
 
 function formatStars(count) {
@@ -217,13 +199,7 @@ onMounted(() => {
   <div class="page" :class="{ loaded: isLoaded }">
     <header>
       <div class="header-identity">
-        <img
-          src="/assets/pratyusha.jpg"
-          alt=""
-          class="avatar"
-          aria-hidden="true"
-        />
-        <span>Pratyusha Javangula</span>
+        <span>@pratyusharj</span>
       </div>
       <div class="header-right">
         <div class="status-indicator">
@@ -290,10 +266,12 @@ onMounted(() => {
     <main>
       <div class="hero">
         <div class="hero-copy">
-          <h1>Senior Software Engineer at Adobe</h1>
+          <h1>Pratyusha Javangula</h1>
           <p class="subtitle">
-            Building query languages, transpilers, and engines to enable
-            personalization at scale in the Adobe Experience Platform Group
+            Currently building data and query platforms to help personalize the
+            web for all man (and agent) kind at Adobe in the Experience Platform
+            group. Californian from soup to nuts with roots in coastal Andhra
+            Pradesh, India. I enjoy making {software, food, music}.
           </p>
           <p class="education">
             Symbolic Systems at Stanford (M.S. 2019), Cognitive Science at UCLA
@@ -331,7 +309,12 @@ onMounted(() => {
       </section>
 
       <section>
-        <h2>Work</h2>
+        <h2>Projects</h2>
+        <p class="subtitle">
+            I build very often. A significant majority of the code 
+            I have written is corporate IP and not shareable here. I hope to fill this section
+            out more very soon.
+          </p>
         <div class="projects">
           <a
             v-for="project in projects"
@@ -345,18 +328,34 @@ onMounted(() => {
               <span class="project-name">{{ project.name }}</span>
               <span class="project-tag">{{ project.tag }}</span>
             </div>
-            <span class="project-stars">{{ projectStars(project) }}</span>
           </a>
         </div>
       </section>
 
-      <section class="activity-section">
+      <!-- <section class="activity-section">
         <h2>Activity</h2>
         <div class="github-contributions">
           <img
             src="https://ghchart.rshah.org/pratyusharj"
             alt="GitHub contributions"
           />
+        </div>
+      </section> -->
+
+      <section>
+        <h2>Potpourri</h2>
+        <div class="potpourri">
+          <a
+            v-for="item in potpourriItems"
+            :key="item.href"
+            :href="item.href"
+            target="_blank"
+            rel="noreferrer"
+            class="potpourri-item"
+          >
+            <span class="potpourri-title">{{ item.title }}</span>
+            <span class="potpourri-source">{{ item.source }}</span>
+          </a>
         </div>
       </section>
     </main>
