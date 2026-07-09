@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref } from "vue";
+import portraitUrl from "../assets/pratyusha.jpg";
 
 const STAR_CACHE_KEY = "github_stars_cache";
 const STAR_CACHE_TTL = 1440 * 60 * 1000;
@@ -68,7 +69,8 @@ const potpourriItems = [
     href: "https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/",
   },
   {
-    title: "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus (incl. me) 2023",
+    title:
+      "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus (incl. me) 2023",
     source: "YouTube",
     href: "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus 2023",
   },
@@ -287,7 +289,7 @@ onMounted(() => {
             :aria-label="isHeroImageZoomed ? 'Close portrait' : 'Zoom portrait'"
             @click="toggleHeroImageZoom"
           >
-            <img src="/assets/pratyusha.jpg" alt="Pratyusha Javangula" />
+            <img :src="portraitUrl" alt="Pratyusha Javangula" />
           </button>
         </div>
       </div>
@@ -311,10 +313,10 @@ onMounted(() => {
       <section>
         <h2>Projects</h2>
         <p class="subtitle">
-            I build very often. A significant majority of the code 
-            I have written is corporate IP and not shareable here. I hope to fill this section
-            out more very soon.
-          </p>
+          I build very often. A significant majority of the code I have written
+          is corporate IP and not shareable here. I hope to fill this section
+          out more very soon.
+        </p>
         <div class="projects">
           <a
             v-for="project in projects"
