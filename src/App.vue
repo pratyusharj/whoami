@@ -267,18 +267,6 @@ onMounted(() => {
 
     <main>
       <div class="hero">
-        <div class="hero-copy">
-          <h1>Pratyusha Javangula</h1>
-          <p class="subtitle">
-            Personalizing the web for all man-and-agentkind at Adobe in the Experience 
-            Platform group (data platforms + query engines). Californian from soup to 
-            nuts with roots in coastal South India. I enjoy making {software,food,music}.
-          </p>
-          <p class="education">
-            Symbolic Systems at Stanford (M.S. 2019), Cognitive Science at UCLA
-            (B.S. 2017)
-          </p>
-        </div>
         <div class="hero-portrait">
           <button
             class="hero-portrait-button"
@@ -290,6 +278,18 @@ onMounted(() => {
           >
             <img :src="portraitUrl" alt="Pratyusha Javangula" />
           </button>
+        </div>
+        <div class="hero-copy">
+          <h1>Pratyusha Javangula</h1>
+          <p class="subtitle">
+            Personalizing the web for all man-and-agentkind at Adobe in the Experience 
+            Platform group (data platforms + query engines). Californian from soup to 
+            nuts with roots in coastal South India. I enjoy making {software,food,music}.
+          </p>
+          <p class="education">
+            Symbolic Systems at Stanford (M.S. 2019), Cognitive Science at UCLA
+            (B.S. 2017)
+          </p>
         </div>
       </div>
 
