@@ -71,12 +71,12 @@ const potpourriItems = [
   {
     title:
       "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus (incl. me) 2023",
-    source: "YouTube",
+    source: "YouTube video",
     href: "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus 2023",
   },
   {
-    title: "My favorite channel for Andhra cooking",
-    source: "YouTube",
+    title: "South Indian cooking (Telugu + English subitles)",
+    source: "YouTube channel",
     href: "https://www.youtube.com/@AmmaChethiVanta",
   },
 ];
@@ -270,10 +270,9 @@ onMounted(() => {
         <div class="hero-copy">
           <h1>Pratyusha Javangula</h1>
           <p class="subtitle">
-            Currently building data and query platforms to help personalize the
-            web for all man (and agent) kind at Adobe in the Experience Platform
-            group. Californian from soup to nuts with roots in coastal Andhra
-            Pradesh, India. I enjoy making {software, food, music}.
+            Personalizing the web for all man-and-agentkind at Adobe in the Experience 
+            Platform group (data platforms + query engines). Californian from soup to 
+            nuts with roots in coastal South India. I enjoy making {software,food,music}.
           </p>
           <p class="education">
             Symbolic Systems at Stanford (M.S. 2019), Cognitive Science at UCLA
