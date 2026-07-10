@@ -239,6 +239,7 @@ h1 {
 .hero-portrait {
   display: flex;
   justify-content: flex-end;
+  padding-top: 0.5rem;
 }
 
 .hero-portrait-button {
