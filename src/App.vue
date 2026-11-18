@@ -55,6 +55,12 @@ const projects = [
     fallbackStars: "4.3k ★",
   },
   {
+    name: "wedding-website",
+    tag: "Read-only version of my wedding website",
+    href: "https://github.com/pratyusharj/wedding-website",
+    fallbackStars: "",
+  },
+  {
     name: "whoami",
     tag: "Source code for this site",
     href: "https://github.com/pratyusharj/whoami",
@@ -72,10 +78,10 @@ const potpourriItems = [
     title:
       "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus (incl. me) 2023",
     source: "YouTube video",
-    href: "Peninsula Symphony Annual Stanford Concert with Stanford Symphonic Chorus 2023",
+    href: "https://www.youtube.com/watch?v=vy_Pb3dHmy4",
   },
   {
-    title: "South Indian cooking (Telugu + English subitles)",
+    title: "South Indian cooking (Telugu + English subtitles)",
     source: "YouTube channel",
     href: "https://www.youtube.com/@AmmaChethiVanta",
   },
